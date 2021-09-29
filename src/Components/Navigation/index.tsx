@@ -1,17 +1,6 @@
 import { Link } from 'react-router-dom'
+import { HeaderType, RouteItemType } from '../../Types/navTypes'
 import { HeaderText, HeaderWrapper, Nav, NavWrapper } from './styles'
-
-export interface RouteItemType {
-	path: string
-	name: string
-	component: React.FC
-	exact: boolean
-}
-
-export interface HeaderType {
-	title: string
-	routes: RouteItemType[]
-}
 
 const Navigation = ({ title, routes }: HeaderType) => {
 	return (
