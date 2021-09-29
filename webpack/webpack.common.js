@@ -40,7 +40,7 @@ const getWPConfig = (env) => {
 			publicPath:
 				env === 'dev'
 					? 'http://localhost:3004/'
-					: 'https://lib.rahulteja.dev/',
+					: 'https://shared.rahulteja.dev/',
 		},
 		plugins: [
 			new HTMLWebpackPlugin({
