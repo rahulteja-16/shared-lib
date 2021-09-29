@@ -1,11 +1,16 @@
+import Navigation from './Components/Navigation'
 import './styles.css'
+import GlobalStyles from './Styles/GlobalStyles'
+import ThemeProvider from './Styles/ThemeProvider'
 
 const App = () => {
 	return (
-		<>
-			<h1>Shared Library</h1>
-			<div>Import any reuseable component here to test.</div>
-		</>
+		<ThemeProvider>
+			<GlobalStyles />
+			<Navigation routes={[]}>
+				<div>Working</div>
+			</Navigation>
+		</ThemeProvider>
 	)
 }
 

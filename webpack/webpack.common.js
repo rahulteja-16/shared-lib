@@ -4,6 +4,7 @@ const ModuleFederationPlugin =
 	require('webpack').container.ModuleFederationPlugin
 // const CopyPlugin = require('copy-webpack-plugin')
 const deps = require('../package.json').dependencies
+const { getExposedComp } = require('../exportHelper.tsx')
 
 const getWPConfig = (env) => {
 	return {
@@ -49,12 +50,7 @@ const getWPConfig = (env) => {
 			new ModuleFederationPlugin({
 				name: 'shared',
 				filename: 'shared.js',
-				exposes: {
-					'./Navigation': './src/Components/Navigation',
-					'./NavigationTypes': './src/Types/navTypes',
-					'./GlobalStyles': './src/Styles/GlobalStyles',
-					'./ThemeProvider': './src/Styles/ThemeProvider',
-				},
+				exposes: getExposedComp(),
 				shared: {
 					...deps,
 					react: {

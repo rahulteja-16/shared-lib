@@ -18,6 +18,12 @@ export const HeaderText = styled.h1`
 	flex-flow: column;
 `
 
+export const HeaderLogo = styled.img`
+	height: 65px;
+	width: 300px;
+	margin-top: -8px;
+`
+
 export const Nav = styled.nav`
 	margin-left: 2%;
 	margin-right: 2%;

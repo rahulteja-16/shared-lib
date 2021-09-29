@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
 import { HeaderType, RouteItemType } from '../../Types/navTypes'
-import { HeaderText, HeaderWrapper, Nav, NavWrapper } from './styles'
+import { HeaderLogo, HeaderWrapper, Nav, NavWrapper } from './styles'
+import Logo from '../../Assets/Logo.png'
 
-const Navigation = ({ title, routes }: HeaderType) => {
+const Navigation = ({ routes }: HeaderType) => {
 	return (
 		<HeaderWrapper>
-			<HeaderText>{title}</HeaderText>
+			<HeaderLogo src={Logo} alt="Logo" />
 			<Nav>
 				{routes.map((item: RouteItemType, index) => {
 					return (

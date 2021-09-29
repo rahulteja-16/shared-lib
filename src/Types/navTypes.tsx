@@ -6,8 +6,8 @@ interface RouteItemType {
 }
 
 interface HeaderType {
-	title: string
 	routes: RouteItemType[]
+	children: React.Component
 }
 
 export { HeaderType, RouteItemType }
