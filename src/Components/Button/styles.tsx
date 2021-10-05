@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 export const ButtonWrapper = styled.button`
+
+
+
 	padding: ${({ theme }) => theme.paddings.sm};
 	font-size: ${({ theme }) => theme.fontSize.md};
 	font-weight: ${({ theme }) => theme.fontWeight.md};
