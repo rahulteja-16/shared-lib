@@ -1,22 +1,14 @@
 import styled from 'styled-components'
 
 export const HeaderWrapper = styled.header`
-	background-color: ${({ theme }) => theme.colors.primary};
-	padding: ${({ theme }) => theme.paddings.md};
-	color: ${({ theme }) => theme.colors.text};
-	height: ${({ theme }) => theme.heights.lg};
+	background-color: var(--bg-primary);
+	height: var(--hg-xl);
+	color: var(--text-100);
 	display: flex;
+	padding: 20px;
 `
 
-export const HeaderText = styled.h1`
-	font-weight: ${({ theme }) => theme.fontWeight.md};
-	text-transform: uppercase;
-	font-size: ${({ theme }) => theme.fontSize.lg};
-	max-width: 1680px;
-	display: flex;
-	justify-content: center;
-	flex-flow: column;
-`
+// padding: ${({ theme }) => theme.paddings.md};
 
 export const HeaderLogo = styled.img`
 	height: 65px;
@@ -42,4 +34,11 @@ export const NavWrapper = styled.div`
 export const Anchor = styled.a`
 	text-decoration: none;
 	color: ${({ theme }) => theme.colors.text};
+`
+
+export const SwitchDiv = styled.div`
+	display: flex;
+	justify-content: flex-end;
+	width: 75%;
+	--btn-bg-color: var(--blue-base);
 `

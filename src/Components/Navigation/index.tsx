@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import { HeaderType, RouteItemType } from '../../Types/navTypes'
-import { HeaderLogo, HeaderWrapper, Nav, NavWrapper } from './styles'
+import { HeaderLogo, HeaderWrapper, Nav, NavWrapper, SwitchDiv } from './styles'
 import Logo from '../../Assets/Logo.png'
+import ToggleTheme from '../ToggleTheme'
 
 const Navigation = ({ routes }: HeaderType) => {
 	return (
@@ -18,6 +19,9 @@ const Navigation = ({ routes }: HeaderType) => {
 					)
 				})}
 			</Nav>
+			<SwitchDiv>
+				<ToggleTheme />
+			</SwitchDiv>
 		</HeaderWrapper>
 	)
 }
