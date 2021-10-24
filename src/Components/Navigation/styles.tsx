@@ -2,19 +2,17 @@ import styled from 'styled-components'
 
 export const HeaderWrapper = styled.header`
 	background-color: var(--bg-primary);
-	height: var(--hg-xl);
+	height: var(--hg-lg);
 	color: var(--text-100);
 	display: flex;
 	padding: 20px;
 	box-shadow: -8px -1px 15px -4px var(--text-200);
 `
 
-// padding: ${({ theme }) => theme.paddings.md};
-
 export const HeaderLogo = styled.img`
 	height: 65px;
 	width: 300px;
-	margin-top: -8px;
+	margin-top: -12px;
 `
 
 export const Nav = styled.nav`
@@ -28,13 +26,11 @@ export const NavWrapper = styled.div`
 	flex-flow: column;
 	justify-content: center;
 	margin: 0% 10%;
-	font-size: ${({ theme }) => theme.fontSize.md};
 	text-transform: UPPERCASE;
 `
 
 export const Anchor = styled.a`
 	text-decoration: none;
-	color: ${({ theme }) => theme.colors.text};
 `
 
 export const SwitchDiv = styled.div`

@@ -1,14 +1,13 @@
-import Navigation from './Components/Navigation'
 import './styles.css'
-import GlobalStyles from './Styles/GlobalStyles'
 
 const App = () => {
 	return (
 		<div>
-			<GlobalStyles />
+			Dummy Place to Check Components
+			{/* <GlobalStyles />
 			<Navigation routes={[]}>
 				<div>Working</div>
-			</Navigation>
+			</Navigation> */}
 		</div>
 	)
 }

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Button from '../Button'
+import { ThemeText } from './styles'
 
 const ToggleTheme = () => {
 	const [theme, setTheme] = useState('light')
@@ -11,7 +12,7 @@ const ToggleTheme = () => {
 
 	return (
 		<Button onBtnClick={() => setTheme(nextTheme)}>
-			<span>Change Theme</span>
+			<ThemeText>Change Theme</ThemeText>
 		</Button>
 	)
 }
