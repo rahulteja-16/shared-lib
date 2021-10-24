@@ -2,20 +2,8 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
     :root {
-        --blue-base: #0284FF;
-		--blue-D20: #1272CC;
-		--blue-D40: #014F99;
-		--blue-D60: #013566;
-		--blue-L60: #98CEFF;
-		--blue-L20: #349DFF;
-		--blue-L40: #66B6FF;
+		--blue-base: #0284FF;
 		--green-base: #04BA34;
-		--green-D20: #03952B;
-		--green-D40: #02701F;
-		--green-D60: #014915;
-		--green-L20: #33C85E;
-		--green-L40: #66D685;
-		--green-L60: #99E2AD;
 		--orange-base: #F98600;
 		--orange-D20: #C76B00;
 		--orange-D40: #945000;
@@ -55,6 +43,12 @@ const GlobalStyles = createGlobalStyle`
 	
 
     body[data-theme='light'] {
+		--blue-20: #349DFF;
+		--blue-40: #66B6FF;
+		--blue-60: #98CEFF;
+		--green-20: #33C85E;
+		--green-40: #66D685;
+		--green-60: #99E2AD;
         --bg-primary: #ffffff;
         --bg-secondary: #F7F7F7;
 		--bg-blue: #E5F3FF;
@@ -68,6 +62,12 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body[data-theme='dark'] {
+		--blue-20: #1272CC;
+		--blue-40: #014F99;
+		--blue-60: #013566;
+		--green-20: #03952B;
+		--green-40: #02701F;
+		--green-60: #014915;
         --bg-primary: #111111;
         --bg-secondary: #1C1C1C;
 		--bg-blue: #052440;

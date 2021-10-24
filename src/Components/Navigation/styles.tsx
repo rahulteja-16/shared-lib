@@ -6,6 +6,7 @@ export const HeaderWrapper = styled.header`
 	color: var(--text-100);
 	display: flex;
 	padding: 20px;
+	box-shadow: -8px -1px 15px -4px var(--text-200);
 `
 
 // padding: ${({ theme }) => theme.paddings.md};
@@ -41,4 +42,6 @@ export const SwitchDiv = styled.div`
 	justify-content: flex-end;
 	width: 75%;
 	--btn-bg-color: var(--blue-base);
+	--btn-bg-hover-color: var(--blue-20);
+	--btn-text-color: var(--text-400);
 `
