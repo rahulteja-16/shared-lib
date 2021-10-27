@@ -4,14 +4,13 @@ export const DatePickerWrapper = styled.input`
 	height: 30px;
 	width: 200px;
 	border: none;
-	border-bottom: 1px solid ${({ theme }) => theme.colors.border};
-	color: ${({ theme }) => theme.colors.border};
-	font-size: ${({ theme }) => theme.fontSize.md};
-	background-color: ${({ theme }) => theme.colors.background};
-	margin: ${({ theme }) => theme.paddings.xsm}
-		${({ theme }) => theme.paddings.md};
+	border-bottom: 1px solid var(--blue-60);
+	color: var(--text-100);
+	font-size: var(--fs-md);
+	background-color: var(--bg-secondary);
+	margin: 10px 10px;
 	&:focus {
 		outline: thin dotted;
-		color: ${({ theme }) => theme.colors.border};
+		color: var(--blue-base);
 	}
 `

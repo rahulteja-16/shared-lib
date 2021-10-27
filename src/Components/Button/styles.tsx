@@ -1,14 +1,15 @@
 import styled from 'styled-components'
 
 export const ButtonWrapper = styled.button`
-	padding: ${({ theme }) => theme.paddings.sm};
-	font-size: ${({ theme }) => theme.fontSize.md};
-	font-weight: ${({ theme }) => theme.fontWeight.md};
-	background-color: ${({ theme }) => theme.colors.info};
-	border: 1px solid ${({ theme }) => theme.colors.info};
-	border-radius: ${({ theme }) => theme.radii.sm};
+	font-size: var(--fs-sm, 16px);
+	font-weight: var(--fw-md, 500);
+	background-color: var(--btn-bg-color, #0284ff);
+	border: 1px solid var(--btn-bg-color, #0284ff);
+	border-radius: var(--border-radius, 8px);
+	color: var(--btn-text-color);
 
-	&:hover {
-		box-shadow: 0px 0px 6px 1px ${({ theme }) => theme.colors.border};
-	}
+	// &:hover {
+	// 	background-color: var(--btn-bg-hover-color, #349dff);
+	// 	box-shadow: 0px 0px 6px 1px var(--btn-bg-hover-color, #349dff);
+	// }
 `

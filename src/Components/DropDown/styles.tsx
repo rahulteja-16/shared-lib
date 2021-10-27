@@ -1,23 +1,23 @@
 import styled from 'styled-components'
 
 export const LabelWrapper = styled.label`
-	color: ${({ theme }) => theme.colors.border};
-	font-size: ${({ theme }) => theme.fontSize.sm};
-	font-weight: ${({ theme }) => theme.fontWeight.md};
+	color: var(--text-100);
+	font-size: var(--fs-sm);
+	font-weight: var(--fw-md);
 	text-transform: uppercase;
-	letter-spacing: 0.4px;
+	font-family: var(--font);
 `
 
 export const SelectWrapper = styled.select`
-	font-size: ${({ theme }) => theme.fontSize.md};
+	font-size: var(--fs-md);
 	border: none;
-	border-bottom: ${({ theme }) => theme.borderWidths.sm} solid
-		${({ theme }) => theme.colors.border};
-	padding-bottom: ${({ theme }) => theme.paddings.xsm};
-	padding-top: ${({ theme }) => theme.paddings.xsm};
-	background-color: ${({ theme }) => theme.colors.secondary};
-	color: ${({ theme }) => theme.colors.border};
+	border-bottom: 1px solid var(--blue-40);
+	padding-bottom: 5px;
+	padding-top: 5px;
+	background-color: var(--bg-blue);
+	color: var(--text-200);
 	&:focus {
 		outline: thin dotted;
+		color: var(--blue-20);
 	}
 `
