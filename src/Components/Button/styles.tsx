@@ -8,8 +8,8 @@ export const ButtonWrapper = styled.button`
 	border-radius: var(--border-radius, 8px);
 	color: var(--btn-text-color);
 
-	&:hover {
-		background-color: var(--btn-bg-hover-color, #349dff);
-		box-shadow: 0px 0px 6px 1px var(--btn-bg-hover-color, #349dff);
-	}
+	// &:hover {
+	// 	background-color: var(--btn-bg-hover-color, #349dff);
+	// 	box-shadow: 0px 0px 6px 1px var(--btn-bg-hover-color, #349dff);
+	// }
 `
