@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const ButtonWrapper = styled.button`
 	font-size: var(--fs-sm, 16px);
 	font-weight: var(--fw-md, 500);
+	font-family: var(--font);
 	background-color: var(--btn-bg-color, #0284ff);
 	border: 1px solid var(--btn-bg-color, #0284ff);
 	border-radius: var(--border-radius, 8px);

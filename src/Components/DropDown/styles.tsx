@@ -4,8 +4,9 @@ export const LabelWrapper = styled.label`
 	color: var(--text-100);
 	font-size: var(--fs-sm);
 	font-weight: var(--fw-md);
-	text-transform: uppercase;
+	text-transform: capitalize;
 	font-family: var(--font);
+	letter-spacing: 0.5px;
 `
 
 export const SelectWrapper = styled.select`

@@ -5,12 +5,6 @@ const GlobalStyles = createGlobalStyle`
 		--blue-base: #0284FF;
 		--green-base: #04BA34;
 		--orange-base: #F98600;
-		--orange-D20: #C76B00;
-		--orange-D40: #945000;
-		--orange-D60: #643600;
-		--orange-L20: #FA9E34;
-		--orange-L40: #FBB666;
-		--orange-L60: #FDCF99;
 		--red-base: #E92C2C;
 		--red-D20: #BA2223;
 		--red-D40: #8C1A1A;
@@ -32,15 +26,13 @@ const GlobalStyles = createGlobalStyle`
 		--border-radius: 8px;
 		--fw-md: 500;
 		--fw-lg: 600;
-		--font: 'Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif';
+		--font: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 		--hg-sm: 24px;
 		--hg-md: 32px;
 		--hg-lg: 40px;
 		--hg-xl: 60px;
 		--hg-xxl: 74px;
 	}
-
-	
 
     body[data-theme='light'] {
 		--blue-20: #349DFF;
@@ -83,6 +75,7 @@ const GlobalStyles = createGlobalStyle`
 	body {
         margin: 0;
         padding: 0;
+		font-family: var(--font);
 		background-color: var(--bg-secondary);
     }
 
