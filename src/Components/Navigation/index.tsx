@@ -3,6 +3,15 @@ import { HeaderType, RouteItemType } from '../../Types/navTypes'
 import { HeaderLogo, HeaderWrapper, Nav, NavWrapper, SwitchDiv } from './styles'
 import Logo from '../../Assets/Logo.png'
 import ToggleTheme from '../ToggleTheme'
+import styled from 'styled-components'
+
+const StyledLink = styled(Link)`
+	text-decoration: none;
+	font-size: 20px;
+	letter-spacing: 0.4px;
+	text-transform: capitalize;
+	color: var(--blue-base);
+`
 
 const Navigation = ({ routes }: HeaderType) => {
 	return (
@@ -12,9 +21,7 @@ const Navigation = ({ routes }: HeaderType) => {
 				{routes.map((item: RouteItemType, index) => {
 					return (
 						<NavWrapper key={index}>
-							<Link to={item.path} style={{ textDecoration: 'none' }}>
-								{item.name}
-							</Link>
+							<StyledLink to={item.path}>{item.name}</StyledLink>
 						</NavWrapper>
 					)
 				})}
