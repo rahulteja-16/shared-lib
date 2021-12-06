@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import { HeaderType, RouteItemType } from '../../Types/navTypes'
 import { HeaderLogo, HeaderWrapper, Nav, NavWrapper, SwitchDiv } from './styles'
-import Logo from '../../Assets/Logo.png'
+import LightLogo from '../../Assets/Logo.png'
 import ToggleTheme from '../ToggleTheme'
 import styled from 'styled-components'
+import { useState } from 'react'
 
 const StyledLink = styled(Link)`
 	text-decoration: none;
@@ -14,20 +15,31 @@ const StyledLink = styled(Link)`
 `
 
 const Navigation = ({ routes }: HeaderType) => {
+	const [currentTheme, setCurrentTheme] = useState('dark')
+
+	const themeValue = (theme: string) => {
+		setCurrentTheme(theme)
+	}
+
 	return (
 		<HeaderWrapper>
-			<HeaderLogo src={Logo} alt="Logo" />
+			{currentTheme === 'dark' ? (
+				<HeaderLogo src={LightLogo} alt="Logo" />
+			) : (
+				<HeaderLogo src={LightLogo} alt="Logo Dark" />
+			)}
 			<Nav>
-				{routes.map((item: RouteItemType, index) => {
-					return (
-						<NavWrapper key={index}>
-							<StyledLink to={item.path}>{item.name}</StyledLink>
-						</NavWrapper>
-					)
-				})}
+				{routes &&
+					routes.map((item: RouteItemType, index) => {
+						return (
+							<NavWrapper key={index}>
+								<StyledLink to={item.path}>{item.name}</StyledLink>
+							</NavWrapper>
+						)
+					})}
 			</Nav>
 			<SwitchDiv>
-				<ToggleTheme />
+				<ToggleTheme themeValue={themeValue} />
 			</SwitchDiv>
 		</HeaderWrapper>
 	)
