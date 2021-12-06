@@ -29,16 +29,17 @@ const Navigation = ({ routes }: HeaderType) => {
 			) : (
 				<HeaderLogo src={DarkLogo} alt="Logo Dark" />
 			)}
-			<Nav>
-				{routes &&
-					routes.map((item: RouteItemType, index) => {
+			{routes && (
+				<Nav>
+					{routes.map((item: RouteItemType, index) => {
 						return (
 							<NavWrapper key={index}>
 								<StyledLink to={item.path}>{item.name}</StyledLink>
 							</NavWrapper>
 						)
 					})}
-			</Nav>
+				</Nav>
+			)}
 			<SwitchDiv>
 				<ToggleTheme themeValue={themeValue} />
 			</SwitchDiv>
