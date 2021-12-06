@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import { HeaderType, RouteItemType } from '../../Types/navTypes'
 import { HeaderLogo, HeaderWrapper, Nav, NavWrapper, SwitchDiv } from './styles'
-import LightLogo from '../../Assets/Logo.png'
+import DarkLogo from '../../Assets/name-dark.png'
+import LightLogo from '../../Assets/name-light.png'
 import ToggleTheme from '../ToggleTheme'
 import styled from 'styled-components'
 import { useState } from 'react'
@@ -24,9 +25,9 @@ const Navigation = ({ routes }: HeaderType) => {
 	return (
 		<HeaderWrapper>
 			{currentTheme === 'dark' ? (
-				<HeaderLogo src={LightLogo} alt="Logo" />
+				<HeaderLogo src={LightLogo} alt="Logo Light" />
 			) : (
-				<HeaderLogo src={LightLogo} alt="Logo Dark" />
+				<HeaderLogo src={DarkLogo} alt="Logo Dark" />
 			)}
 			<Nav>
 				{routes &&
