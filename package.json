@@ -1,7 +1,7 @@
 {
   "name": "@portfolio/shared-app",
   "version": "1.0.0",
-  "description": "Shared Library for Portfolio",
+  "description": "Shared Components for Portfolio",
   "main": "index.js",
   "scripts": {
     "start": "webpack server --config webpack/webpack.config.js --env env=dev",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rahulteja-dev/react-ts-template.git"
+    "url": "git+https://github.com/rahulteja-dev/shared-lib.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rahulteja-dev/react-ts-template/issues"
+    "url": "https://github.com/rahulteja-dev/shared-lib/issues"
   },
-  "homepage": "https://github.com/rahulteja-dev/react-ts-template#readme",
+  "homepage": "https://github.com/rahulteja-dev/shared-lib#readme",
   "dependencies": {
     "@types/react-router-dom": "^5.3.0",
     "@types/styled-components": "^5.1.14",
@@ -29,6 +29,7 @@
     "eslint": "^7.32.0",
     "husky": "^4.0.0",
     "react": "^17.0.2",
+    "react-datepicker": "^4.5.0",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.3.0",
     "react-spring": "^9.3.0",
@@ -46,6 +47,7 @@
     "@babel/runtime": "^7.15.4",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.1",
     "@types/react": "^17.0.21",
+    "@types/react-datepicker": "^4.3.2",
     "@types/react-dom": "^17.0.9",
     "@typescript-eslint/eslint-plugin": "^5.1.0",
     "@typescript-eslint/parser": "^5.1.0",

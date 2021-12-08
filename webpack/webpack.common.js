@@ -40,7 +40,7 @@ const getWPConfig = (env) => {
 		output: {
 			publicPath:
 				env === 'dev'
-					? 'http://localhost:3004/'
+					? 'http://localhost:3000/'
 					: 'https://shared.rahulteja.dev/',
 		},
 		plugins: [
