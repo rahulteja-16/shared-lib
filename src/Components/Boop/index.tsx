@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import { useSpring, animated } from 'react-spring'
 
+interface BoopTypes {
+	x: number
+	y: number
+	rotation: number
+	scale: number
+	timing: number
+	children: React.FC
+}
+
 const Boop = ({
 	x = 0,
 	y = 0,
@@ -8,12 +17,11 @@ const Boop = ({
 	scale = 1,
 	timing = 150,
 	children,
-}) => {
+}: BoopTypes) => {
 	const [isBooped, setIsBooped] = useState(false)
 
 	const style = useSpring({
 		display: 'inline-block',
-		backfaceVisibility: 'hidden',
 		transform: isBooped
 			? `translate(${x}px, ${y}px)
                 rotate(${rotation}deg)
@@ -45,9 +53,9 @@ const Boop = ({
 	}
 
 	return (
-		<animated.span onMouseEnter={trigger} style={style}>
+		<animated.div onMouseEnter={trigger} style={style}>
 			{children}
-		</animated.span>
+		</animated.div>
 	)
 }
 
