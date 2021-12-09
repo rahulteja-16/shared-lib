@@ -5,6 +5,7 @@ const getExposedComp = () => {
 		'./Button': `${BASE_PATH}/Button`,
 		'./DropDown': `${BASE_PATH}/DropDown`,
 		'./DatePicker': `${BASE_PATH}/CustomDatePicker`,
+		'./Boop': `${BASE_PATH}/Boop`,
 	}
 }
 
