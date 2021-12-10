@@ -1,17 +1,21 @@
 import styled from 'styled-components'
 
 export const ButtonWrapper = styled.button`
-	font-size: var(--fs-sm, 16px);
-	font-weight: var(--fw-md, 500);
-	font-family: var(--font);
-	background-color: var(--btn-bg-color, #0284ff);
-	border: 1px solid var(--btn-bg-color, #0284ff);
-	border-radius: var(--border-radius, 8px);
-	color: var(--btn-text-color);
+	color: var(--btn-text-color, #e8a255);
+	background-color: transparent;
+	border: 1px solid var(--btn-border-color, #e8a255);
+	border-radius: var(--border-radius);
+	padding: 0.75rem 1rem;
+	font-family: var(--font-mono);
+	line-height: 1;
+	text-decoration: none;
 	cursor: pointer;
+	transition: var(--transition);
+	margin-left: 15px;
+	font-size: var(--fs-xs);
+	letter-spacing: 0.5px;
 
-	// &:hover {
-	// 	background-color: var(--btn-bg-hover-color, #349dff);
-	// 	box-shadow: 0px 0px 6px 1px var(--btn-bg-hover-color, #349dff);
-	// }
+	&:hover {
+		background-color: var(--orange-tint);
+	}
 `
